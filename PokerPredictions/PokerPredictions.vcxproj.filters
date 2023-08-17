@@ -54,10 +54,10 @@
     <ClCompile Include="ImGui\imgui_widgets.cpp">
       <Filter>Imgui</Filter>
     </ClCompile>
-    <ClCompile Include="MonteCarlo.cpp">
+    <ClCompile Include="MonteCarlo.h">
       <Filter>Header Files\PredictionCalculator</Filter>
     </ClCompile>
-    <ClCompile Include="PairPrediction.cpp">
+    <ClCompile Include="PairPrediction.h">
       <Filter>Header Files\PredictionCalculator</Filter>
     </ClCompile>
   </ItemGroup>

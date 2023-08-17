@@ -149,8 +149,8 @@
     <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
     <ClCompile Include="ImGui\imgui_tables.cpp" />
     <ClCompile Include="ImGui\imgui_widgets.cpp" />
-    <ClCompile Include="MonteCarlo.cpp" />
-    <ClCompile Include="PairPrediction.cpp" />
+    <ClCompile Include="MonteCarlo.h" />
+    <ClCompile Include="PairPrediction.h" />
     <ClCompile Include="PokerPredictions.cpp" />
     <ClCompile Include="UI_Control.cpp" />
   </ItemGroup>
