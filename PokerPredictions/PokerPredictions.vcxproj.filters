@@ -98,5 +98,8 @@
     <ClInclude Include="Cards.h">
       <Filter>Header Files\PredictionCalculator</Filter>
     </ClInclude>
+    <ClInclude Include="NashEquilbrium.h">
+      <Filter>Header Files\PredictionCalculator</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
