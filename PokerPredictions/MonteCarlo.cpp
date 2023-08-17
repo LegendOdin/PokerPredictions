@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-
+//Monte Carlo Prediction of Poker Hands//Needs to be optimized for speed and higher count of simulations
 bool isSpecificCards(const Card& card1, const Card& card2, const Rank& rank1, const Rank& rank2) {
     return ((card1.getRank() == rank1 && card2.getRank() == rank2) ||
         (card1.getRank() == rank2 && card2.getRank() == rank1));
@@ -41,4 +41,19 @@ double estimateSpecificCardsProbability(int simulations, const Rank& rank1, cons
     }
 
     return static_cast<double>(specificCardsCount) / simulations;
+}
+//Example of how to use the Monte Carlo Simulation
+void runSimluations() {
+    const int SIMULATIONS = 25000000;  // Adjust as needed
+    std::string card1Input, card2Input;
+    std::cout << "Enter your first hole card (e.g., A, K, Q, J, 10, ... 2): ";
+    std::cin >> card1Input;
+    std::cout << "Enter your second hole card (e.g., A, K, Q, J, 10, ... 2): ";
+    std::cin >> card2Input;
+
+    Rank rank1 = getRankFromInput(card1Input);
+    Rank rank2 = getRankFromInput(card2Input);
+
+    double probability = estimateSpecificCardsProbability(SIMULATIONS, rank1, rank2);
+    std::cout << "Estimated probability of getting [" << card1Input << ", " << card2Input << "] in hole cards (after " << SIMULATIONS << " simulations): " << probability << std::endl;
 }

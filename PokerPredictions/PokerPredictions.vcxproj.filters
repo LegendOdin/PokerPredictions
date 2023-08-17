@@ -57,6 +57,9 @@
     <ClCompile Include="MonteCarlo.cpp">
       <Filter>Header Files\PredictionCalculator</Filter>
     </ClCompile>
+    <ClCompile Include="PairPrediction.cpp">
+      <Filter>Header Files\PredictionCalculator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Global.h">
